@@ -11,6 +11,6 @@ steps:
     - "export GITHUB_TOKEN"
     - sudo pacman -Sy base-devel bc kmod libelf pahole xmlto python-sphinx python-sphinx_rtd_theme graphviz imagemagick git github-cli bc pahole llvm curl zip wget --noconfirm
     - cd /home/notroot
-    - git clone https://github.com/theradcolor/arch-build-system_linux && cd arch-build-system_linux
+    - git clone https://github.com/theradcolor/arch-build-system_linux -b amd && cd arch-build-system_linux
     - bash makepkg --syncdeps --skipinteg --skipinteg
     - bash post_build

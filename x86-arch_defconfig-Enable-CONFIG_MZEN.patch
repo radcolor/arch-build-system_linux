@@ -1,0 +1,26 @@
+From ebda932a538d8d94117baeffaf7ea7e5acad7f9b Mon Sep 17 00:00:00 2001
+From: Shashank Baghel <theradcolor@gmail.com>
+Date: Sat, 28 Nov 2020 05:42:36 +0530
+Subject: [PATCH 1/1] x86: arch_defconfig: Enable CONFIG_MZEN
+
+Signed-off-by: Shashank Baghel <theradcolor@gmail.com>
+---
+ arch/x86/configs/arch_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/x86/configs/arch_defconfig b/arch/x86/configs/arch_defconfig
+index 9e5f73c619f8..232238471131 100644
+--- a/arch/x86/configs/arch_defconfig
++++ b/arch/x86/configs/arch_defconfig
+@@ -87,7 +87,7 @@ CONFIG_MTRR_SANITIZER_ENABLE_DEFAULT=1
+ CONFIG_MTRR_SANITIZER_SPARE_REG_NR_DEFAULT=0
+ CONFIG_X86_INTEL_TSX_MODE_AUTO=y
+ # CONFIG_MNATIVE is not set
+-# CONFIG_MZEN is not set
++CONFIG_MZEN=y
+ CONFIG_EFI=y
+ CONFIG_EFI_STUB=y
+ CONFIG_EFI_MIXED=y
+-- 
+2.29.0
+

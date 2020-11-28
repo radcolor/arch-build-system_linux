@@ -1,7 +1,7 @@
 # Maintainer: Shashank Baghel (theradcolor) <theradcolor@gmail.com>
 
 pkgbase=linux-rad
-pkgver=5.9.11-rad
+pkgver=5.9.11_rad
 pkgrel=1
 pkgdesc='Rad Linux Kernel'
 url="https://github.com/theradcolor/linux.git"
@@ -17,6 +17,7 @@ _srcname=linux
 source=(
   "$_srcname::git+https://github.com/theradcolor/linux.git"
   sphinx-workaround.patch
+  x86-arch_defconfig-Enable-CONFIG_MZEN.patch
 )
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds

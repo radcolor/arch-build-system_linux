@@ -6,7 +6,7 @@ function send-package()
     LINUX_HEADERS="/home/notroot/arch-build-system_linux/linux-rad-headers*.zst"
     ls -a /home/notroot/arch-build-system_linux/
     gh auth login --with-token ${GITHUB_TOKEN}
-    git clone https://theradcolor:${GITHUB_TOKEN}@github.com/theradcolor/linux-ci-release.git && cd linux-ci-release
+    git clone https://theradcolor:${GITHUB_TOKEN}@github.com/theradcolor/linux-amd-kernel.git && cd linux-amd-kernel
     gh release delete v1
     git push origin :refs/tags/v1
     gh release create v1 ${LINUX} ${LINUX_HEADERS} -t 'Linux Release' -n 'Sample Notes'
